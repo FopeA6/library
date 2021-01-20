@@ -10,6 +10,10 @@ DATA = {
     { 'id': 3, 'title': 'The No. 1 Ladies\' Detective Agency' 'author': 'Alexander McCall Smith'}
 ]
 }
+
+# for the models data
+# from .models import ...
+
 def home(request):
     data = { 'books': book.objects.all() }
     return render(request, 'book/home.html', data)
