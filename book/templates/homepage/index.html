@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App (Django)</title>
+</head>
+<body>
+      <h1>Welcome to the Library, {user}</h1>
+      <ul>
+        <a href="{% url 'library_app.show' id=book.id %}">
+          <h3>Title: {{book.title}}</h3>
+        </a>
+      </ul>
+</body>
+</html>
